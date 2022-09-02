@@ -1,0 +1,115 @@
+.card {
+  border-radius: 20px;
+  background: linear-gradient(rgb(0, 196, 255), rgb(179, 0, 98));
+  font-family: Arial;
+  text-align: justify;
+  box-shadow: 0px 0px 10px 0px wheat;
+  height: 75px;
+  width: 40%;
+  text-shadow: 0px 0px 4px wheat;
+  overflow: hidden;
+  display: flex;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  filter: grayscale(100%);
+  transform-origin: top;
+}
+
+.card:hover {
+  height: 500px;
+  transform: scaleY(1);
+}
+
+.card-header {
+  border-radius: 20px;
+  font-family: fantasy;
+  font-size: xx-large;
+}
+
+.card-text {
+  text-transform: capitalize;
+}
+
+a:hover {
+  color: white;
+}
+
+@keyframes shake {
+  11.1% {
+    transform: none;
+  }
+  22.2% {
+    transform: skew(-12.5deg);
+  }
+  33.3% {
+    transform: skew(6.25deg);
+  }
+  44.4% {
+    transform: skew(-3.125deg);
+  }
+  55.5% {
+    transform: skew(1.5625deg);
+  }
+  66.6% {
+    transform: skew(-0.78125deg);
+  }
+  77.7% {
+    transform: skew(0.390625deg);
+  }
+  88.8% {
+    transform: skew(-0.1953125deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.shake:hover {
+  animation: shake 2s infinite;
+}
+
+.card-effect {
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  filter: grayscale(100%);
+}
+.card-effect:hover {
+  filter: grayscale(0%);
+}
+
+.img-effect {
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  filter: grayscale(100%);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 2px wheat;
+}
+.img-effect:hover {
+  filter: grayscale(0%);
+}
+
+/****************** BUTTONS ******************/
+
+.btn {
+  height: 50px;
+  width: 100px;
+  color: hsl(204, 100%, 50%);
+  border-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px rgb(255, 255, 255);
+}
+.btn.left {
+  border-radius: 10px 5px 5px 20px;
+}
+.btn.right {
+  border-radius: 5px 10px 20px 5px;
+}
+.btn:hover {
+  border-color: rgb(255, 255, 255);
+  background: rgb(0, 153, 255);
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn:active {
+  border-color: rgb(0, 119, 255);
+  box-shadow: none;
+}
